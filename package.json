@@ -1,0 +1,19 @@
+{
+  "name": "jobsall.com",
+  "version": "1.0.0",
+  "description": "Backend for jobsAll.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranjeet2003/jobsAll_BE.git"
+  },
+  "author": "Ranjeet Gautam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranjeet2003/jobsAll_BE/issues"
+  },
+  "homepage": "https://github.com/ranjeet2003/jobsAll_BE#readme"
+}
