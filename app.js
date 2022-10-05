@@ -10,7 +10,7 @@ app.use(bodyParser.json({ limit: "50mb" }));
 app.use("/api/govt", govtJobsRoutes);
 // app.use("/api/users", usersRoutes);
 // Define your port in your config.env file. Don't forget to add 'dotenv' npm package to use config.env
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5555;
 const PASSWORD = process.env.PASSWORD;
 // console.log(PASSWORD);
 try {
@@ -21,7 +21,7 @@ try {
       console.log(err);
     }
   );
-  app.listen(5555);
+  app.listen(PORT);
   console.log("Server started on port 5555");
   // console.log("Connection Successful");
 } catch (err) {
