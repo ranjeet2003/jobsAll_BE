@@ -3,9 +3,9 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const GovtJobsSchema = new Schema({
-  dispHeading: { type: String, required: true },
-  descriptionURL: { type: String, required: true },
-  postName: { type: String, required: true },
+  dispHeading: { type: String },
+  descriptionURL: { type: String },
+  postName: { type: String },
   postDate: { type: String },
   examDate: { type: String },
   shortInfo: { type: String },
