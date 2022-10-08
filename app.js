@@ -1,10 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+var cors = require("cors");
 
 require("dotenv").config({ path: "./config.env" });
 const govtJobsRoutes = require("./routes/govtJob-Route");
 const app = express();
+app.use(cors());
 app.use(bodyParser.json({ limit: "50mb" }));
 
 app.use("/api/govt", govtJobsRoutes);
