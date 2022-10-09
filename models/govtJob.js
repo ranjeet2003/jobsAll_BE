@@ -7,6 +7,7 @@ const GovtJobsSchema = new Schema({
   descriptionURL: { type: String },
   postName: { type: String },
   postDate: { type: String },
+  lastDate: { type: String },
   examDate: { type: String },
   shortInfo: { type: String },
   admitCardAvlbl: { type: String },

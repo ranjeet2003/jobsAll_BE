@@ -11,6 +11,7 @@ const postJob = async (req, res, next) => {
       postName: req.body.postName,
       postDate: req.body.postDate,
       examDate: req.body.examDate,
+      lastDate: req.body.lastDate,
       shortInfo: req.body.shortInfo,
       admitCardAvlbl: req.body.admitCardAvlbl,
       Fee: req.body.Fee,
