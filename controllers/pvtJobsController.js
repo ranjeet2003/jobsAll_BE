@@ -8,6 +8,7 @@ const postJob = async (req, res, next) => {
     const newJob = await PvtJobsModel.create({
       dispHeading: req.body.dispHeading,
       descriptionURL: req.body.descriptionURL,
+      experience: req.body.experience,
       batch: req.body.batch,
       location: req.body.location,
       ctc: req.body.ctc,
