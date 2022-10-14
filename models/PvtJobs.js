@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 
 const PvtJobsSchema = new Schema({
   dispHeading: { type: String },
+  experience: { type: String },
   descriptionURL: { type: String },
   batch: { type: String },
   location: { type: String },
