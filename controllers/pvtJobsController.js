@@ -24,6 +24,7 @@ const postJob = async (req, res, next) => {
       postDescription: req.body.postDescription,
       skills: req.body.skills,
       applyCriteria: req.body.applyCriteria,
+      location: req.body.location,
     });
 
     res.status(201).json({

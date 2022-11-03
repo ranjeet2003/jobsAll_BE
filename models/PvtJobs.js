@@ -21,6 +21,7 @@ const PvtJobsSchema = new Schema({
   postDescription: { type: String },
   skills: { type: String },
   applyCriteria: { type: String },
+  location: { type: String },
   timestamp: { type: Date, default: Date.now },
 });
 
