@@ -8,13 +8,22 @@ const postJob = async (req, res, next) => {
     const newJob = await PvtJobsModel.create({
       dispHeading: req.body.dispHeading,
       descriptionURL: req.body.descriptionURL,
-      experience: req.body.experience,
-      batch: req.body.batch,
-      location: req.body.location,
-      ctc: req.body.ctc,
+      postName: req.body.postName,
+      postDate: req.body.postDate,
+      examDate: req.body.examDate,
+      lastDate: req.body.lastDate,
+      shortInfo: req.body.shortInfo,
+      postNameShortDtl: req.body.postNameShortDtl,
+      totalPost: req.body.totalPost,
+      eligibility: req.body.eligibility,
       applyLink: req.body.applyLink,
       notificationLink: req.body.notificationLink,
       officialWebsiteLink: req.body.officialWebsiteLink,
+      ctc: req.body.ctc,
+      hourlyPay: req.body.hourlyPay,
+      postDescription: req.body.postDescription,
+      skills: req.body.skills,
+      applyCriteria: req.body.applyCriteria,
     });
 
     res.status(201).json({
