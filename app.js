@@ -5,6 +5,7 @@ var cors = require("cors");
 
 require("dotenv").config({ path: "./config.env" });
 const govtJobsRoutes = require("./routes/govtJob-Route");
+const internShipJobsRoutes = require("./routes/internshipJob-Routes");
 const pvtJobsRoutes = require("./routes/pvtJob-Route");
 const app = express();
 app.use(cors());
@@ -12,6 +13,7 @@ app.use(bodyParser.json({ limit: "50mb" }));
 
 app.use("/api/govt", govtJobsRoutes);
 app.use("/api/pvt", pvtJobsRoutes);
+app.use("/api/intern", internShipJobsRoutes);
 // app.use("/api/users", usersRoutes);
 // Define your port in your config.env file. Don't forget to add 'dotenv' npm package to use config.env
 const PORT = process.env.PORT || 5555;
