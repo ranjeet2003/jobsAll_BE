@@ -26,6 +26,6 @@ const InternshipJobsSchema = new Schema({
 });
 
 module.exports = mongoose.model(
-  "InternshipJobsSchema",
+  "InternshipJobs",
   InternshipJobsSchema
 );
