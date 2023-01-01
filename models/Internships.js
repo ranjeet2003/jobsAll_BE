@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const InternshipJobsJobsSchema = new Schema({
+const InternshipJobsSchema = new Schema({
   dispHeading: { type: String },
   descriptionURL: { type: String },
   postName: { type: String },
@@ -26,6 +26,6 @@ const InternshipJobsJobsSchema = new Schema({
 });
 
 module.exports = mongoose.model(
-  "InternshipJobsJobsSchema",
-  InternshipJobsJobsSchema
+  "InternshipJobsSchema",
+  InternshipJobsSchema
 );

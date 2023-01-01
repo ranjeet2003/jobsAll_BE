@@ -25,4 +25,4 @@ const PvtJobsSchema = new Schema({
   timestamp: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model("PvtovtJobs", PvtJobsSchema);
+module.exports = mongoose.model("PvtJobs", PvtJobsSchema);
