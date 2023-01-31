@@ -41,7 +41,7 @@ const postAnswerKey = async (req, res, next) => {
 const getAllAnswerKeys = async (req, res, next) => {
   let answerkeys;
   try {
-    answerkeys = await AnswerKeyModel.find();
+    answerkeys = await AnswerKeyModel.find().sort({ timestamp: -1 });
   } catch (err) {
     console.log(err);
     return next(err);

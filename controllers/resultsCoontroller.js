@@ -41,7 +41,7 @@ const postResult = async (req, res, next) => {
 const getAllResult = async (req, res, next) => {
   let result;
   try {
-    result = await ResultModel.find();
+    result = await ResultModel.find().sort({ timestamp: -1 });
   } catch (err) {
     console.log(err);
     return next(err);

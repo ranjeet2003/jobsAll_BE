@@ -39,7 +39,7 @@ const postJob = async (req, res, next) => {
 const getAllJob = async (req, res, next) => {
   let result;
   try {
-    result = await GovtJobsModel.find();
+    result = await GovtJobsModel.find().sort({ timestamp: -1 }).sort({ timestamp: -1 });
   } catch (err) {
     console.log(err);
     return next(err);

@@ -41,7 +41,7 @@ const postJob = async (req, res, next) => {
 const getAllJob = async (req, res, next) => {
   let result;
   try {
-    result = await InternshipJobModel.find();
+    result = await InternshipJobModel.find().sort({ timestamp: -1 });
   } catch (err) {
     console.log(err);
     return next(err);
